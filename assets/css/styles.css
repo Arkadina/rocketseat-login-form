@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #afb6c2;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.left-side {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #191816;
+}
+.left-side .left-side-logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+.left-side .left-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: #24221f;
+  width: 60%;
+  height: 60%;
+  padding: 50px 50px;
+}
+.left-side .left-side-container .container-upper h2 {
+  display: flex;
+  font-size: 24px;
+  color: #d4ccb6;
+  font-family: "Poppins", sans-serif;
+}
+.left-side .left-side-container .container-upper h2 img {
+  margin-right: 10px;
+}
+.left-side .left-side-container form {
+  width: 100%;
+}
+.left-side .left-side-container form span {
+  font-size: 14px;
+  color: #ffc632;
+}
+.left-side .left-side-container form strong {
+  color: #ffc632;
+  margin: 0 5px;
+}
+.left-side .left-side-container form a {
+  text-decoration: none;
+}
+.left-side .left-side-container form button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 51px;
+  text-transform: uppercase;
+  color: #24221f;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  background-color: #ffc632;
+  margin: 5px 0;
+  transition: all 0.2s linear;
+}
+.left-side .left-side-container form button:hover {
+  opacity: 0.6;
+}
+.left-side .left-side-container form label {
+  font-family: "Poppins", sans-serif;
+  font-family: 16px;
+  font-weight: 600;
+  display: block;
+}
+.left-side .left-side-container form .input-form {
+  width: 100%;
+}
+.left-side .left-side-container form .input-form input {
+  border-radius: 4px;
+  background-color: transparent;
+  height: 40px;
+  border: 2px solid #868686;
+  outline: none;
+  width: 100%;
+  margin: 10px 0;
+  padding: 6px 10px;
+  font-family: "Poppins", sans-serif;
+}
+.left-side .left-side-container form .input-form input:hover,
+.left-side .left-side-container form .input-form input:focus {
+  outline: 2px solid #ffc632;
+  border: none;
+}
+.left-side .left-side-container form .password-recover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.left-side .left-side-container form .password-recover span {
+  font-size: 14px;
+  color: #ffc632;
+  font-weight: 500;
+}
+.left-side .left-side-container form .password-recover a {
+  color: #ffc632;
+}
+.left-side .left-side-container form .password-recover .checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+}
+.left-side .left-side-container form .password-recover .checkbox-label input[type=checkbox] {
+  margin-right: 5px;
+  border: 2px solid #000;
+  /* Add if not using autoprefixer */
+  /* For iOS < 15 to remove gradient background */
+  background-color: #ffc632;
+  /* Not removed via appearance */
+}
+.left-side .left-side-container form .password-recover .checkbox-label input[type=checkbox]:checked {
+  background: #000;
+}
+.left-side .left-side-container form .span-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-side {
+  background: url("../img/side-image-2x.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1250px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .right-side {
+    display: none;
+  }
+}
+@media screen and (max-height: 550px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .right-side {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
